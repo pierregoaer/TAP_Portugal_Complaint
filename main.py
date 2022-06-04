@@ -10,8 +10,8 @@ from gmail_credentials import *
 
 # ___ Files and variables ___ #
 EMAIL_NUMBER = 'email_number.txt'
-# LIST_EMAILS = 'TAP_Email_Addresses.txt'
-LIST_EMAILS = 'emails_test.txt'
+LIST_EMAILS = 'TAP_Email_Addresses.txt'
+# LIST_EMAILS = 'emails_test.txt'
 LETTER_FILE_PATH = "TAP_Portugal_Explanation_Letter.pdf"
 
 
@@ -68,12 +68,12 @@ for email in email_addresses:
     # This message is sent from Python.
     # """
     message_content = f"Hello,\n\n" \
-                      f"I am reaching out to you today as I have been waiting for a refund from TAP for over 2 years now. I had booked flights with TAP from Toronto to Paris for April 2020 (reference UI2RLV). Due to Covid, the flights were cancelled on March 26, 2020, and I was offered a voucher as compensation. I have been trying for several months to get this voucher turned into a refund as I’m entitled to do. I am now seeking your help to accelerate this process. I’m awaiting a $745.84CAD (around 550€) refund. This is now my {ordinal_email_number} email regarding this matter.\n\n" \
-                      f"As much as I understand how airlines have been affected by this pandemic, passengers have also very much been impacted and, in my case, $745.84CAD represents a large amount of money. As of today, it has been {duration} since the flights were cancelled!\n\n" \
+                      f"I am reaching out to you today as I have been waiting for a refund from TAP for over 2 years now. I had booked flights with TAP from Toronto to Paris for April 2020 (reference XXXXXX). Due to Covid, the flights were cancelled on March 26, 2020, and I was offered a voucher as compensation. I have been trying for several months to get this voucher turned into a refund as I’m entitled to do. I am now seeking your help to accelerate this process. I’m awaiting a $XXXXX (around XXXXX€) refund. This is now my {ordinal_email_number} email regarding this matter.\n\n" \
+                      f"As much as I understand how airlines have been affected by this pandemic, passengers have also very much been impacted and, in my case, $XXXXX represents a large amount of money. As of today, it has been {duration} since the flights were cancelled!\n\n" \
                       f"Attached is a document presenting the entire process I have gone through up until now. Could you please point me in the direction of the right person to help me with this matter?\n\n" \
                       f"Thank you,\n\n" \
                       f"Pierre Goaer\n" \
-                      f"goaer.pierre@gmail.com\n"
+                      f"xxxxxxxxxxx@gmail.com\n"
     message = MIMEMultipart()
     message['Subject'] = "Refund status"
     message['From'] = f"Pierre Goaer <{GMAIL_SENDER}>"
